@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indolfo Catering - By Jimena Arbeloa</title>
+    <link rel="shortcut icon" href="../assets/img/indolfoIcono.ico"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylecss.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
+</head>
+<body class="container-fluid">
+    <header class= "sticky-top"> 
+        <nav class="navbar slide navbar-expand-lg colorHeader navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/indolfoLogo.png" alt="Logo" width="150"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center justify-content-end w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="./eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="./galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     </header>
+     <main class="container principal">
+      <div class="row portadaContactanos mb-4">
+        <h1 class="col-12 mainTitleInicio">
+            CONTACTANOS
+        </h1>
+    </div>
+      <h1 class="titleSection">Dejanos tus datos y nos comunicaremos con vos.</h1>
+            <div class="row colorHeader mb-4">
+              <div class="col-sm-12 col-lg-6 secDer">
+                <img src="../assets/img/Comida Principalpexels-cottonbro-studio-3304057.jpg" class="card-img-top h-100"  alt="...">
+              </div>
+                <div class="col-sm-12 col-lg-6 secDer mt-5">
+                    <form class="row" action="validar.html" autocomplete="on">
+                        <div class="mb-3 col-12">
+                          <label for="Nombre" class="form-label text-white">Nombre y Apellido</label>
+                          <input type="text" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3 col-12">
+                          <label for="Email" class="form-label text-white">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="ejemplo@mail.com" required aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">No guardaremos su mail para spam.</div>
+                        </div>
+                        <div class="mb-3 col-12">
+                          <label for="telefono" class="form-label text-white">Telefono</label>
+                          <input class="form-control" id="telefono" name="telefono" type="number" placeholder="1144329430" minlength="3" maxlength="50" required autofocus autocomplete="off" required>
+                        </div>
+                        <div class="mb-3 col-12">
+                        <label for="evento" class="form-label text-white">Indique Tipo de Evento</label>
+                        <select class="form-control" name="tipo de evento" id="evento">
+                            <option value="institucional">Evento Institucional</option>
+                            <option value="privado">Evento Privado</option>
+                            <option value="social">Evento Social</option>
+                        </select>
+                        <div class="mb-3 col-12">
+                            <label for="exampleInputPassword1" class="form-label text-white">Comentario</label>
+                            <textarea name="" id="exampleInputComentario1" cols="30" rows="4" class="form-control"></textarea>
+                            
+                        </div>
+                        
+                        <button type="submit" class="btn btn-light">Enviar Formulario</button>
+                      </form>
+                </div>
+               
+            </div>
+      <!--
+
+      <div class="row portadaContactanos mb-4">
+        <h1 class="col-12 mainTitleInicio">
+            CONTACTANOS
+        </h1>
+    </div>
+        <h5>Dejanos tus datos y nos comunicaremos con vos.</h5>
+            <form action="validar.html" autocomplete="on">
+                <div>
+                     <label for="nombre">Nombre y Apellido</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off" required>
+                 </div>
+                 <div>
+                     <label for="telefono">Telefono</label>
+                     <input id="telefono" name="telefono" type="number" placeholder="Telefono" minlength="3" maxlength="50" required autofocus autocomplete="off" required>
+                 </div>
+                 <div>
+                     <label for="email">E-Mail</label>
+                        <input id="email" name="email" type="email" placeholder="ejemplo@mail.com" required>
+                 </div>
+                 <div>
+                        <label for="evento">Indique Tipo de Evento</label>
+                        <select name="tipo de evento" id="evento">
+                            <option value="institucional">Evento Institucional</option>
+                            <option value="privado">Evento Privado</option>
+                            <option value="social">Evento Social</option>
+                        </select>
+                 </div>
+                 <div>
+                    <textarea name="consulta" id="consulta" cols="15" rows="5" placeholder="Consulta"></textarea>
+                    <br>
+                 </div>
+                 <div>
+                        <input id="enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+          -->
+     </main>
+     <div class="container-fluid">
+        <footer class="row colorHeader paddingTB">
+            <div class="row justify-content-between">
+                <div class="col centrar" class="divContactoF">
+                    <a href="https://walink.co/0d29a4" target="_blank"><h3><i class="fa-brands fa-whatsapp"></i></h3></a>
+                </div>
+                <div class="col centrar" class="divContactoF">
+                    <a href="mailto:jimenaarbeloa@gmail.com" target="_blank"><h3><i class="fa-regular fa-envelope"></i></h3></a>
+                </div>
+                <div class="col centrar" class="divContactoF">
+                    <a href="https://www.instagram.com/indolfo_catering/" target="_blank"><h3><i class="fa-brands fa-instagram"></i></h3></a></i>
+                </div>
+            </div>
+            <div class="row justify-content-center align-item-center divMap">
+                <iframe class="col-12"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3339.698246078875!2d-64.99416268532514!3d-33.169547980855306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEwJzEwLjQiUyA2NMKwNTknMzEuMSJX!5e0!3m2!1ses!2sar!4v1679066836765!5m2!1ses!2sar" width="1280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
