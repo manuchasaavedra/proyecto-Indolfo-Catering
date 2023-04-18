@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d2b099e7;
+}
+
+.colorHeader {
+    background-color:#a18f869f ;
+}
+
+.colorHeader2 {
+    background-color:#a18f86d5 ;
+}
+
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portadaInicio {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/inicio.jpg);
+    background: linear-gradient(0,5);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTitleInicio {
+    font-family: 'Bona Nova', serif;
+    font-size: 2.40rem;
+    text-align: center;
+    justify-content:center;
+    color: rgb(106, 20, 20);
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.altoSection {
+    height: 40vh;
+    width: 100%;
+}
+
+.alturaSec{
+    height: 30vh;
+}
+
+.titleSection {
+    font-family: 'Bona Nova', serif;
+    text-decoration:none;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(106, 20, 20);
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.sectionNosotros {
+    background-image: url(../assets/img/sushin\ cook.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+
+.sectionEventos {
+    background-image: url(../assets/img/champagne.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+.parrafoSection {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0,5rem;
+    background-color: rgba(0, 0, 0, 0.264);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.imagenFilosofia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.secIzq {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secDer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.galeria {
+    width: 100%;
+}
+
+.carousel-item {
+    height: 40vh;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.bgPC {
+    background-color: rgba(0, 0, 0, 0.411) ;
+}
+
+/*NOSOTROS*/
+.portadaNosotros {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/nostros.jpg);
+    background: linear-gradient(0,5);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+/*EVENTOS*/
+.portadaEventos {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/eventos.jpg);
+    background: linear-gradient(0,5);
+    background-size: cover;
+    background-position: center;
+}
+
+/*GALERIA*/
+.portadaGaleria{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/galeria.jpg);
+    background: linear-gradient(0,5);
+    background-size: cover;
+    background-position: center;
+}
+
+/*CONTACTANOS*/
+.portadaContactanos {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/contactanos.jpg);
+    background: linear-gradient(0,5);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*footer*/
+.centrar {
+    text-align: center;
+}
+.divMap{
+    display: inline-block;
+}

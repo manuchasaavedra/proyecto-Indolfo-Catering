@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Montserrat:wght@500&display=swap");
+/*variables estructura general*/
+/*variables contenedor portadas*/
+.portadaInicio, .portadaContactanos, .portadaGaleria, .portadaEventos, .portadaNosotros {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/inicio.jpg);
+  background: linear-gradient(0, 5);
+  background-size: cover;
+  background-position: center;
+}
+.portadaInicio .mainTitleInicio, .portadaContactanos .mainTitleInicio, .portadaGaleria .mainTitleInicio, .portadaEventos .mainTitleInicio, .portadaNosotros .mainTitleInicio {
+  font-family: "'Bona Nova', serif)";
+  font-size: 2.4rem;
+  text-align: center;
+  justify-content: center;
+  color: rgb(106, 20, 20);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.portadaNosotros {
+  background-image: url(../assets/img/nostros.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*EVENTOS*/
+.portadaEventos {
+  background-image: url(../assets/img/eventos.jpg);
+}
+
+/*GALERIA*/
+.portadaGaleria {
+  background-image: url(../assets/img/galeria.jpg);
+}
+
+/*CONTACTANOS*/
+.portadaContactanos {
+  background-image: url(../assets/img/contactanos.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colorHeader2 {
+  background-color: #86746a;
+}
+
+.colorHeader {
+  background-color: rgba(161, 143, 134, 0.6235294118);
+}
+
+.link {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #7b5c48, #8d6d57, #a07e67, #b39077, #c7a288);
+}
+
+.principal {
+  /* @include flexible (column,space-around,center)*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.altoSection {
+  height: 40vh;
+  width: 100%;
+}
+
+.alturaSec {
+  height: 30vh;
+}
+
+.sectionNosotros {
+  background: url(../assets/img/sushin\ cook.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+.sectionEventos {
+  background: url(../assets/img/champagne.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+.imagenFilosofia {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 5s;
+}
+
+.secIzq, .secDer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parrafoSection {
+  font-family: "'Montserrat', sans-serif";
+  font-size: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.264);
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.titleSection {
+  font-family: "'Bona Nova', serif)";
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(106, 20, 20);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.mainTitleInicio {
+  font-family: "'Bona Nova', serif)";
+  font-size: 2.4rem;
+  text-align: center;
+  justify-content: center;
+  color: rgb(106, 20, 20);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.galeria {
+  width: 100%;
+}
+.galeria .carousel-item {
+  height: 40vh;
+}
+.galeria .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bgPC {
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.centrar {
+  text-align: center;
+}
+
+.divMap {
+  display: inline-block;
+}
+
+.galeriaPag {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*las filas automaticas van a ser de 160 pixeles*/
+  grid-auto-rows: 160px;
+  grid-template-areas: "img1 img2 img3 img3" "img1 img4 img3 img3" "img5 img5 img7 img7" "img5 img5 img6 img8";
+  gap: 0.8em;
+}
+
+.galeria_imagenes {
+  position: relative;
+  cursor: pointer;
+  /*que se esnconda todo lo que salga de ese elemento
+  ya que este elemento va a referenciar a un texto */
+  overflow: hidden;
+}
+
+/*pseudo elemento before*/
+.galeria_imagenes::before {
+  content: "Indolfo Catering";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(106, 20, 20, 0.38);
+  /* transform: translate(100%);se mueve hacia la derecha */
+  /* transform: scale(0);*/
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.galeria_imagenes:hover::before {
+  /*  transform: scale(1) rotate(360deg)  ;*/
+  transform: scaleY(1);
+  /* transform: translate(0)  ;*/
+}
+
+.galeria_imagenes--g1 {
+  grid-area: img1;
+}
+
+.galeria figure:nth-child(1) {
+  grid-area: img1;
+}
+
+.galeria_imagenes--g2 {
+  grid-area: img2;
+}
+
+.galeria_imagenes--g3 {
+  grid-area: img3;
+}
+
+.galeria_imagenes--g4 {
+  grid-area: img4;
+}
+
+.galeria_imagenes--g5 {
+  grid-area: img5;
+}
+
+.galeria_imagenes--g6 {
+  grid-area: img6;
+}
+
+.galeria_imagenes--g7 {
+  grid-area: img7;
+}
+
+.galeria_imagenes--g8 {
+  grid-area: img8;
+}
+
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  /*la imagen no pierde la resolucion */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*celular o pantallas menores a 768*/
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem;
+    padding: 0.8em 0.4em;
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img1 img2" "img1 img3" "img1 img3" "img4 img5" "img4 img5" "img4 img5" "img7 img6" "img7 img8";
+  }
+  .galeria_imagenes::before {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=stylecss.css.map */

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colorHeader2 {
+    background-color: $color-header2;
+}
+
+.colorHeader {
+    background-color: $color-header;
+}
+
+.link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color:#000000;
+    position: relative;
+    margin-top:10px;
+    font-size: 1rem;
+}
+.link::after{
+    content:'';
+    width: 100%;
+    height:1px;
+    background-color: #000000;
+    border-radius:4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform:scaleX(1);
+}
+
+body{
+    overflow-x: hidden; 
+    background-image: linear-gradient(to right, #7b5c48, #8d6d57, #a07e67, #b39077, #c7a288);
+}
+
+.principal {
+   /* @include flexible (column,space-around,center)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.altoSection {
+    height: 40vh;
+    width: 100%;
+}
+
+.alturaSec{
+    height: 30vh;
+}
+
+.sectionNosotros {
+    background: url(../assets/img/sushin\ cook.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+
+.sectionEventos {
+    background: url(../assets/img/champagne.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+}
+
+
+.imagenFilosofia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 5s;
+}
+
+
+.secIzq {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secDer {
+    @extend .secIzq;
+}
+
+.parrafoSection {
+    font-family: map-get($fuentes , fuente-parrafo);
+    font-size: map-get($tamaño-fuente , tamaño-parrafo);
+    background-color: rgba(0, 0, 0, 0.264);
+    color: map-get($color-fuente , color-parrafo);
+    text-align: center;
+    justify-content: center;
+}
+
+.titleSection {
+    font-family: map-get($fuentes , fuente-titulos);
+    text-decoration:none;
+    font-size: map-get($tamaño-fuente , tamaño-tit-sec);
+    text-align: center;
+    text-decoration: none;
+    color: map-get($color-fuente , color-titulos);
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.mainTitleInicio {
+    font-family: map-get($fuentes , fuente-titulos);
+    font-size: map-get($tamaño-fuente , tamaño-tit-princ);
+    text-align: center;
+    justify-content:center;
+    color: map-get($color-fuente , color-titulos);
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.galeria {
+    width: 100%;
+    .carousel-item {
+        height: 40vh;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }   
+}
+
+.bgPC {
+    background-color: rgba(0, 0, 0, 0.411);   
+}
+
+.centrar {
+    text-align: center;
+}
+.divMap{
+    display: inline-block;
+}

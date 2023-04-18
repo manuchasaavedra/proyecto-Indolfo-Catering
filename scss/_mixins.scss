@@ -1,0 +1,7 @@
+
+@mixin flexible ($direccion,$justificacion,$alineacion) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justificacion;
+    align-items: $alineacion;
+}

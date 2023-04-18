@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indolfo Catering - By Jimena Arbeloa</title>
+    <meta name="description" content="Nos dedicamos a todo tipo de eventos. Eventos Sociales, Constitucionales y Privados.">
+    <meta name="keywords" content="eventos catering de eventos cumpleaños casamientos reuniones"> 
+    <title>Tipos de Eventos - Indolfo Catering</title>
     <link rel="shortcut icon" href="../assets/img/indolfoIcono.ico">  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/stylecss.css">
+    <link rel="stylesheet" href="../scss/stylecss.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
 </head>
@@ -22,19 +25,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center justify-content-end w-100">
                   <li class="nav-item">
-                    <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active text-dark link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Eventos</a>
+                    <a class="nav-link text-dark link" href="#">Eventos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./nosotros.html">Nosotros</a>
+                    <a class="nav-link text-dark link" href="./nosotros.html">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./galeria.html">Galeria</a>
+                    <a class="nav-link text-dark link" href="./galeria.html">Galeria</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./contactanos.html">Contactanos</a>
+                    <a class="nav-link text-dark link" href="./contactanos.html">Contactanos</a>
                   </li>
                 </ul>
               </div>
@@ -51,26 +54,31 @@
 
         <!--MAIN -->
 
-        <section class="row d-flex my-4 colorHeader">
+        <section class="row d-flex my-4 colorHeader" data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="col-sm-12 col-lg-3">
                 <h2 class="titleSection">Eventos Sociales</h2>
                 <p class="parrafoPrincipal">Un casamiento, un cumpleaños, una despedida, y por que no también un nacimiento, un egreso, o simplemente, las ganas de disfrutar un gran momento.</p>
             </div>
             <div class="col-sm-12 col-lg-9">
                 <div class="card-group">
-                <div class="card">
-                    <img src="../assets/img/Eventos Sociales5.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card">
-                    <img src="../assets/img/Eventos Sociales6.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card">
-                    <img src="../assets/img/Eventos Sociales4.jpg" class="card-img-top" alt="...">
+                    <div class="card">
+                        <img src="../assets/img/Eventos Sociales5.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/Eventos Sociales6.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="../assets/img/Eventos Sociales4.jpg" class="card-img-top" alt="...">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="row flex-column-reverse flex-lg-row my-4 colorHeader2">
+        <section class="row flex-column-reverse flex-lg-row my-4 colorHeader2" data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="col-sm-12 col-lg-9">
                 <div class="card-group">
                     <div class="card">
@@ -90,7 +98,9 @@
             </div>
         </section>
 
-        <section class="row d-flex my-4 colorHeader">
+        <section class="row d-flex my-4 colorHeader" data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="col-sm-12 col-lg-3">
                 <h2 class="titleSection">Eventos Privados</h2>
                 <p class="parrafoPrincipal">Algo intimo, en tu propia casa. Llevamos nuestro servicio a la calidez de tu hogar, para una reunión de ensueño.</p>
@@ -110,24 +120,26 @@
         </section>
 
      </main>
-     <div class="container-fluid">
-        <footer class="row colorHeader paddingTB">
-            <div class="row justify-content-between">
-                <div class="col centrar" class="divContactoF">
-                    <a href="https://walink.co/0d29a4" target="_blank"><h3><i class="fa-brands fa-whatsapp"></i></h3></a>
-                </div>
-                <div class="col centrar" class="divContactoF">
-                    <a href="mailto:jimenaarbeloa@gmail.com" target="_blank"><h3><i class="fa-regular fa-envelope"></i></h3></a>
-                </div>
-                <div class="col centrar" class="divContactoF">
-                    <a href="https://www.instagram.com/indolfo_catering/" target="_blank"><h3><i class="fa-brands fa-instagram"></i></h3></a></i>
-                </div>
+     <footer class="row colorHeader paddingTB container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-4 centrar" class="divContactoF">
+                <a href="https://walink.co/0d29a4" target="_blank"><h3><i class="fa-brands fa-whatsapp"></i></h3></a>
             </div>
-            <div class="row justify-content-center align-item-center divMap">
-                <iframe class="col-12"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3339.698246078875!2d-64.99416268532514!3d-33.169547980855306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEwJzEwLjQiUyA2NMKwNTknMzEuMSJX!5e0!3m2!1ses!2sar!4v1679066836765!5m2!1ses!2sar" width="1280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </section>
+            <div class="col-4 centrar" class="divContactoF">
+                <a href="mailto:jimenaarbeloa@gmail.com" target="_blank"><h3><i class="fa-regular fa-envelope"></i></h3></a>
             </div>
-        </footer>
-    </div>
+            <div class="col-4 centrar" class="divContactoF">
+                <a href="https://www.instagram.com/indolfo_catering/" target="_blank"><h3><i class="fa-brands fa-instagram"></i></h3></a></i>
+            </div>
+        </div>
+        <div class="row justify-content-center align-item-center divMap">
+            <iframe class="col-sm-12"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3339.698246078875!2d-64.99416268532514!3d-33.169547980855306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEwJzEwLjQiUyA2NMKwNTknMzEuMSJX!5e0!3m2!1ses!2sar!4v1679066836765!5m2!1ses!2sar" width="1280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </section>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+
+.portadaInicio {
+    width: $width-portada;
+    height: $height-portada;
+    display: $display-portada;
+    align-items: $align-portada;
+    justify-content: $justify-portada;
+    background-image: url(../assets/img/inicio.jpg);
+    background: linear-gradient(0,5);
+    background-size: $bg-s-portada;
+    background-position: $bg-p-portada;
+    .mainTitleInicio {
+        font-family: map-get($fuentes , fuente-titulos);
+        font-size: map-get($tamaño-fuente , tamaño-tit-princ);
+        text-align: center;
+        justify-content:center;
+        color: map-get($color-fuente , color-titulos);
+        text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    }
+}
+
+.portadaNosotros {
+    @extend .portadaInicio;
+    background-image: url(../assets/img/nostros.jpg);
+    object-fit: cover;
+}
+
+/*EVENTOS*/
+.portadaEventos {
+    @extend .portadaInicio;
+    background-image: url(../assets/img/eventos.jpg);
+}
+
+/*GALERIA*/
+.portadaGaleria{
+    @extend .portadaInicio;
+    background-image: url(../assets/img/galeria.jpg);
+}
+
+/*CONTACTANOS*/
+.portadaContactanos {
+    @extend .portadaInicio;
+    background-image: url(../assets/img/contactanos.jpg);
+}

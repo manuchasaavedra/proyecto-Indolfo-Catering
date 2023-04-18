@@ -1,0 +1,30 @@
+/*variables estructura general*/
+
+$fuentes: (
+    fuente-titulos: "'Bona Nova', serif)",
+    fuente-parrafo: "'Montserrat', sans-serif",
+    );
+
+ $tamaño-fuente : (
+    tamaño-tit-princ: 2.40rem,
+    tamaño-tit-sec: 2rem,
+    tamaño-parrafo: 0.5rem,
+    );
+
+$color-fuente: (
+    color-titulos: rgb(106, 20, 20),
+    color-parrafo: white,
+    );
+
+$color-header: #a18f869f;
+$color-header2: #86746a;
+$color-galeria: rgba(106, 20, 20, 0.38);
+
+/*variables contenedor portadas*/
+$width-portada: 100vw;
+$height-portada: 200px;
+$display-portada: flex;
+$align-portada: center;
+$justify-portada:center;
+$bg-s-portada: cover;
+$bg-p-portada: center;

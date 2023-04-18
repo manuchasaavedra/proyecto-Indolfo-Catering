@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indolfo Catering - By Jimena Arbeloa</title>
+    <meta name="description" content="Te contamos mas sobre nosotros, nuestro equipo, nuestra cheff.">
+    <meta name="keywords" content="sobre indolfo empresa de catering">
+    <title>Sobre Nosotros - Indolfo Catering </title>
     <link rel="shortcut icon" href="../assets/img/indolfoIcono.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/stylecss.css">
+    <link rel="stylesheet" href="../scss/stylecss.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
 </head>
@@ -22,19 +25,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-item-center justify-content-end w-100">
                   <li class="nav-item">
-                    <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active text-dark link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./eventos.html">Eventos</a>
+                    <a class="nav-link text-dark link" href="./eventos.html">Eventos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Nosotros</a>
+                    <a class="nav-link text-dark link" href="#">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./galeria.html">Galeria</a>
+                    <a class="nav-link text-dark link" href="./galeria.html">Galeria</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark" href="./contactanos.html">Contactanos</a>
+                    <a class="nav-link text-dark link" href="./contactanos.html">Contactanos</a>
                   </li>
                 </ul>
               </div>
@@ -49,8 +52,12 @@
             </h1>
         </div>
         <!--Aca Empieza el MAIN-->
-        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader">
-            <div class="col-sm-12 col-lg-6 secIzq">
+        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader" data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
+            <div class="col-sm-12 col-lg-6 secIzq" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                 <h2 class="titleSection">Equipo Indolfero</h2>
                 <p class="parrafoPrincipal">Somos una empresa de catering que trabaja creando experiencias únicas a la hora de festejar, compartir y disfrutar. </p>
             <p class="parrafoPrincipal">Nos encanta estar presentes en momentos de celebración cuidando cada detalle y buscando nuevos sabores que hagan de tu experiencia algo diferente.</p>
@@ -63,7 +70,9 @@
             </div>
         </section>
 
-        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader2">
+        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader2" data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="col-sm-12 col-lg-6 secIzq">
                 <img class="imagenFilosofia" src="../assets/img/Jimena.jpg" alt="Equipo">
             </div>
@@ -78,7 +87,9 @@
             </div>
         </section>
 
-        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader">
+        <section class="row d-flex justify-content-center align-item-center my-4 colorHeader" data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="col-sm-12 col-lg-6 secIzq">
                 <h2 class="titleSection">Nuestro Equipo</h2>
                 <p class="parrafoPrincipal">
@@ -90,24 +101,26 @@
             </div>
         </section>
      </main>
-     <div class="container-fluid">
-        <footer class="row colorHeader paddingTB">
+        <footer class="row colorHeader paddingTB container-fluid">
             <div class="row justify-content-between">
-                <div class="col centrar" class="divContactoF">
+                <div class="col-4 centrar" class="divContactoF">
                     <a href="https://walink.co/0d29a4" target="_blank"><h3><i class="fa-brands fa-whatsapp"></i></h3></a>
                 </div>
-                <div class="col centrar" class="divContactoF">
+                <div class="col-4 centrar" class="divContactoF">
                     <a href="mailto:jimenaarbeloa@gmail.com" target="_blank"><h3><i class="fa-regular fa-envelope"></i></h3></a>
                 </div>
-                <div class="col centrar" class="divContactoF">
+                <div class="col-4 centrar" class="divContactoF">
                     <a href="https://www.instagram.com/indolfo_catering/" target="_blank"><h3><i class="fa-brands fa-instagram"></i></h3></a></i>
                 </div>
             </div>
             <div class="row justify-content-center align-item-center divMap">
-                <iframe class="col-12"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3339.698246078875!2d-64.99416268532514!3d-33.169547980855306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEwJzEwLjQiUyA2NMKwNTknMzEuMSJX!5e0!3m2!1ses!2sar!4v1679066836765!5m2!1ses!2sar" width="1280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </section>
+                <iframe class="col-sm-12"src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3339.698246078875!2d-64.99416268532514!3d-33.169547980855306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDEwJzEwLjQiUyA2NMKwNTknMzEuMSJX!5e0!3m2!1ses!2sar!4v1679066836765!5m2!1ses!2sar" width="1280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </section>
             </div>
         </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
